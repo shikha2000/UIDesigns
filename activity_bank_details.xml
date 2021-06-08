@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BankDetails">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/Relative_Bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_keyboard_arrow_left_black_18dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/large_text"/>
+    </RelativeLayout>
+        <View
+            android:id="@+id/viewBank"
+            android:layout_below="@+id/Relative_Bank"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_black"
+            />
+        <TextView
+            android:id="@+id/textBank"
+            android:layout_below="@+id/viewBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/large_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/RelativeDetails"
+                    android:layout_below="@+id/textBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/tvDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter bank account number *"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                <EditText
+                    android:id="@+id/etDetails"
+                    android:layout_below="@+id/tvDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. 879875654892"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/RelativeAccountHolderName"
+                    android:layout_below="@+id/RelativeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/tvAccountHolderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Holder Name *"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                    <EditText
+                        android:id="@+id/etAccountHolderName"
+                        android:layout_below="@+id/tvAccountHolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. Dev"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/RelativeIFSCCode"
+                    android:layout_below="@+id/RelativeAccountHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/tvIFSCCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC CODE *"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                    <EditText
+                        android:id="@+id/etIFSCCode"
+                        android:layout_below="@+id/tvIFSCCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. UIKJK7808700"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textGSTDetails"
+                    android:layout_below="@+id/RelativeIFSCCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GST Details"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/large_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/RelativeGSTNumber"
+                    android:layout_below="@+id/textGSTDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/tvGSTNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your GST Number (optional)"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                    <EditText
+                        android:id="@+id/etGSTNumber"
+                        android:layout_below="@+id/tvGSTNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. UIKJK7808700"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textPANDetails"
+                    android:layout_below="@+id/RelativeGSTNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAN Details"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/large_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/RelativePANNumber"
+                    android:layout_below="@+id/textPANDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/tvPANNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your PAN Number (optional)"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                    <EditText
+                        android:id="@+id/etPANNumber"
+                        android:layout_below="@+id/tvPANNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. IOUYFGBHJK"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text"/>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btnSaveDetails"
+                    android:layout_below="@+id/RelativePANNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/text_black"
+                    android:text="Save Details"
+                    android:background="@color/colorPrimary"/>
+            </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

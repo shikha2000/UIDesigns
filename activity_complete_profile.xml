@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CompleteProfile">
+
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_keyboard_arrow_left_black_18dp" />
+
+        <TextView
+            android:id="@+id/tvCompleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/i1"
+            android:gravity="center"
+            android:text="Complete Profile"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/medium_text" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Save"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/small_text" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/View"
+        android:layout_below="@+id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/View"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/RL4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle">
+                <!--<ImageView
+                    android:id="@+id/iemail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <EditText
+                    android:id="@+id/etemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your E-mail ID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL2"
+                android:layout_margin="10dp">
+                <!--<ImageView
+                    android:id="@+id/iphone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/phoneicon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="+919205260061"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL3"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle">
+                <!--<ImageView
+                    android:id="@+id/iUser"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/person"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <EditText
+                    android:id="@+id/etUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name on your ID card"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL5"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle">
+                <!--<ImageView
+                    android:id="@+id/iaddress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/person"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <EditText
+                    android:id="@+id/etaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Permanent address on your ID card"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL8"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle">
+                <!--<ImageView
+                    android:id="@+id/icity"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/person"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <EditText
+                    android:id="@+id/etcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City on your ID card"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL9"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_circle">
+                <!--<ImageView
+                    android:id="@+id/iBirthdate"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/person"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />-->
+                <EditText
+                    android:id="@+id/etBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your BirthDay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/small_text"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL10">
+
+                <RelativeLayout
+                    android:id="@+id/RL12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvEmergencyDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="Emergency Contact Details"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+                    <Switch
+                        android:id="@+id/S1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL12"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etGuardianName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Guardian Name*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etRelationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etGuardianName"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Relationship"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etRelationship"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Phone No"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etParmanentAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPhone"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Parmanent Address"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL11"
+                android:layout_marginTop="1dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/RL15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvEmployementDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="Employement Details"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <Switch
+                        android:id="@+id/S2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL15"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etEmployeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Latest Employer Name*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etOfficialID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etEmployeName"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Oficial E-mail Id"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etOfficialNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etOfficialID"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Official Phone No"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etOfficeAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etOfficialNo"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Office Address"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL14">
+
+                <RelativeLayout
+                    android:id="@+id/RL18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvPanDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:padding="10dp"
+                        android:text="PAN Details"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <Switch
+                        android:id="@+id/S3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/RL19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL18"
+                    android:padding="10dp">
+                    <EditText
+                        android:id="@+id/etPanNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Your PAN Number"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL17">
+
+                <RelativeLayout
+                    android:id="@+id/RL21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvGST"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="GSTIN Details"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <Switch
+                        android:id="@+id/S4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL21"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/etEntityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Legal Entity  Name*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etGSTNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etEntityName"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="GST Number*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etGSTAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etGSTNo"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="GST Address*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etGSTContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etGSTAddress"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="GST Contact Number*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+
+                    <EditText
+                        android:id="@+id/etGSTEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etGSTContact"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="GST Email Address*"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/small_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

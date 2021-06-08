@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.Login"
+    android:background="@color/text_lightgreen">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/himmart_logo"/>
+
+        <RelativeLayout
+            android:id="@+id/RelativeSpinner"
+            android:layout_below="@+id/imgLogo"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your mobile number"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/small_text"
+                android:inputType="number"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/BtnGetOtp"
+            android:layout_below="@+id/RelativeSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="Get OTP"
+            android:textColor="@color/text_black"
+            android:background="@color/colorAccent"/>
+        <RelativeLayout
+            android:id="@+id/RelativeNoAccount"
+            android:layout_below="@+id/BtnGetOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/textNoAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/small_text"
+                />
+            <TextView
+                android:id="@+id/textRegister"
+                android:layout_toRightOf="@+id/textNoAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/small_text"/>
+        </RelativeLayout>
+    </RelativeLayout>

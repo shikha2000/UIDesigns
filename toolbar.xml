@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_marginTop="10dp"
+
+    android:orientation="vertical"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    tools:contentInsetEnd="0dp"
+    tools:contentInsetLeft="0dp"
+    tools:contentInsetRight="0dp"
+    tools:contentInsetStart="0dp"
+    tools:layout_scrollFlags="scroll|enterAlways">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <LinearLayout
+            android:id="@+id/iconlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/simpleSwitch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:textOff="Off"
+                android:textOn="On" />
+            <!--<ImageView
+                android:id="@+id/location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/location"
+                />-->
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gurugram"
+                android:textColor="@color/colorAccent"
+                android:layout_marginRight="5dp"/>-->
+        </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/himmart_logo"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

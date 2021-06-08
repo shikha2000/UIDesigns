@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLogin"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/himmart_logo"/>
+
+        <RelativeLayout
+            android:id="@+id/RelativeSpinner"
+            android:layout_below="@+id/imgLogo"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/textCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/small_text"
+                android:text="+91"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your mobile number"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/small_text"
+                android:inputType="number"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/BtnSignUp"
+            android:layout_below="@+id/RelativeSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/text_black"
+            android:background="@color/colorAccent"/>
+    <RelativeLayout
+        android:id="@+id/RelativeAlreadyAccount"
+        android:layout_below="@+id/BtnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/textAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have account? "
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/small_text"
+        />
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_toRightOf="@+id/textAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/small_text"/>
+    </RelativeLayout>
+</RelativeLayout>

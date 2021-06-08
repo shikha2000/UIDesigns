@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Menu">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RelativeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/textMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="@dimen/large_text"
+            android:textColor="@color/text_black" 
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeBankDetails"
+        android:layout_below="@+id/RelativeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textBankDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textSize="@dimen/small_text"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:id="@+id/imgnext"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/ViewBankDetails"
+        android:layout_below="@+id/RelativeBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_black"
+        android:layout_margin="20dp"/>
+    <RelativeLayout
+        android:id="@+id/RelativeAccountSetting"
+        android:layout_below="@+id/ViewBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textAccountSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="@dimen/small_text"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/ViewAccountSetting"
+        android:layout_below="@+id/RelativeAccountSetting"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_black"
+        android:layout_margin="20dp"/>
+    <RelativeLayout
+        android:id="@+id/RelativePrivacyPolicy"
+        android:layout_below="@+id/ViewAccountSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textPrivacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="@dimen/small_text"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_black"/>
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_black_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/ViewPrivacyPolicy"
+        android:layout_below="@+id/RelativePrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_black"
+        android:layout_margin="20dp"/>
+</RelativeLayout>
+</FrameLayout>
